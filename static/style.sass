@@ -1,0 +1,78 @@
+html, body
+    margin: 0
+    font-family: Verdana
+    background: linear-gradient(to right, rgb(134, 214, 235), rgb(190, 159, 241))
+
+main
+    box-sizing: border-box
+    width: 350px
+    min-height: 259px
+    margin: calc((100vh - 259px) / 2) auto
+    box-shadow: 0 0 9px 0 rgb(135, 135, 135)
+    background: white
+
+    .header
+        background: rgb(76, 147, 199)
+        padding: 10px 10px
+        h2
+            margin: 0
+            color: white
+
+    .add-list
+        display: flex
+
+        #add
+            flex-grow: 1
+            border: 0
+            border-bottom: 1px solid rgb(76, 147, 199)
+            border-right: 1px solid rgb(76, 147, 199)
+            padding: 8px 10px
+            font-family: Verdana
+            font-size: 15px
+
+            &:focus
+                outline-color: rgb(113, 72, 231)
+
+        button[type=submit]
+            border: 0
+            border-bottom: 1px solid rgb(76, 147, 199)
+            font-family: Verdana
+            background: white
+            cursor: pointer
+            transition: background 0.3s ease-in-out
+            &:hover
+                background: rgb(76, 147, 199)
+                color: white
+            &:focus
+                outline-color: transparent
+
+    .list
+        ul
+            margin: 0
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+
+            li
+                padding: 8px 10px
+                list-style: none
+                width: 350px
+                word-wrap: break-word
+                box-sizing: border-box
+                display: flex
+                justify-content: space-between
+
+                .delete
+                    border-radius: 0
+                    border: 1px solid rgb(76, 147, 199)
+                    background: white
+                    transition: all 0.3s ease
+                    cursor: pointer
+                    box-shadow: 0 0 5px 0 rgb(101, 101, 101)
+
+                    &:hover
+                        color: white
+                        background: rgb(76, 147, 199)
+
+            li:nth-child(odd)
+                background: rgb(230, 230, 230)

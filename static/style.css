@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  font-family: Verdana;
+  background: linear-gradient(to right, #86d6eb, #be9ff1); }
+
+main {
+  box-sizing: border-box;
+  width: 350px;
+  min-height: 259px;
+  margin: calc((100vh - 259px) / 2) auto;
+  box-shadow: 0 0 9px 0 #878787;
+  background: white; }
+  main .header {
+    background: #4c93c7;
+    padding: 10px 10px; }
+    main .header h2 {
+      margin: 0;
+      color: white; }
+  main .add-list {
+    display: flex; }
+    main .add-list #add {
+      flex-grow: 1;
+      border: 0;
+      border-bottom: 1px solid #4c93c7;
+      border-right: 1px solid #4c93c7;
+      padding: 8px 10px;
+      font-family: Verdana;
+      font-size: 15px; }
+      main .add-list #add:focus {
+        outline-color: #7148e7; }
+    main .add-list button[type=submit] {
+      border: 0;
+      border-bottom: 1px solid #4c93c7;
+      font-family: Verdana;
+      background: white;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out; }
+      main .add-list button[type=submit]:hover {
+        background: #4c93c7;
+        color: white; }
+      main .add-list button[type=submit]:focus {
+        outline-color: transparent; }
+  main .list ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    main .list ul li {
+      padding: 8px 10px;
+      list-style: none;
+      width: 350px;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+      main .list ul li .delete {
+        border-radius: 0;
+        border: 1px solid #4c93c7;
+        background: white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 0 5px 0 #656565; }
+        main .list ul li .delete:hover {
+          color: white;
+          background: #4c93c7; }
+    main .list ul li:nth-child(odd) {
+      background: #e6e6e6; }
+
+/*# sourceMappingURL=style.css.map */
